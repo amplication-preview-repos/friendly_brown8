@@ -1,0 +1,27 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model DreamRequest {
+  createdAt            DateTime              @default(now())
+  dreamDescription     String?
+  dreamInterpretations DreamInterpretation[]
+  id                   String                @id @default(cuid())
+  updatedAt            DateTime              @updatedAt
+  user                 String?
+}
+
+model DreamInterpretation {
+  createdAt      DateTime      @default(now())
+  dreamRequest   DreamRequest? @relation(fields: [dreamRequestId], references: [id])
+  dreamRequestId String?
+  id             String        @id @default(cuid())
+  imageUrl       String?
+  interpretation String?
+  updatedAt      DateTime      @updatedAt
+}
