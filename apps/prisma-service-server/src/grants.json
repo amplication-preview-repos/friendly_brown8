@@ -1,0 +1,362 @@
+[
+  {
+    "role": "amin",
+    "resource": "Like",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Like",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Like",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Like",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Like",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Like",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Like",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Like",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Like",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Like",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Like",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Like",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Like",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Like",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Like",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Tag",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Tag",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Tag",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Tag",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Tag",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Tag",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Tag",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Tag",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Tag",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Tag",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Tag",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Tag",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Tag",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Tag",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Tag",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Dream",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Dream",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Dream",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Dream",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Dream",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Dream",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Dream",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Dream",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Dream",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Dream",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Dream",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Dream",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "amin",
+    "resource": "Dream",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "premium",
+    "resource": "Dream",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Dream",
+    "action": "read:any",
+    "attributes": "*"
+  }
+]
