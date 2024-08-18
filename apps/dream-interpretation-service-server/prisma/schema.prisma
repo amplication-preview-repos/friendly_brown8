@@ -7,21 +7,14 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model DreamRequest {
-  createdAt            DateTime              @default(now())
-  dreamDescription     String?
-  dreamInterpretations DreamInterpretation[]
-  id                   String                @id @default(cuid())
-  updatedAt            DateTime              @updatedAt
-  user                 String?
-}
-
-model DreamInterpretation {
-  createdAt      DateTime      @default(now())
-  dreamRequest   DreamRequest? @relation(fields: [dreamRequestId], references: [id])
-  dreamRequestId String?
-  id             String        @id @default(cuid())
-  imageUrl       String?
-  interpretation String?
-  updatedAt      DateTime      @updatedAt
+model User {
+  createdAt DateTime @default(now())
+  email     String?  @unique
+  firstName String?
+  id        String   @id @default(cuid())
+  lastName  String?
+  password  String
+  roles     Json
+  updatedAt DateTime @updatedAt
+  username  String   @unique
 }

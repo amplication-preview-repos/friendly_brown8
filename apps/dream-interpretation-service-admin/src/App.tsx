@@ -5,14 +5,10 @@ import { theme } from "./theme/theme";
 import Login from "./Login";
 import "./App.scss";
 import Dashboard from "./pages/Dashboard";
-import { DreamRequestList } from "./dreamRequest/DreamRequestList";
-import { DreamRequestCreate } from "./dreamRequest/DreamRequestCreate";
-import { DreamRequestEdit } from "./dreamRequest/DreamRequestEdit";
-import { DreamRequestShow } from "./dreamRequest/DreamRequestShow";
-import { DreamInterpretationList } from "./dreamInterpretation/DreamInterpretationList";
-import { DreamInterpretationCreate } from "./dreamInterpretation/DreamInterpretationCreate";
-import { DreamInterpretationEdit } from "./dreamInterpretation/DreamInterpretationEdit";
-import { DreamInterpretationShow } from "./dreamInterpretation/DreamInterpretationShow";
+import { UserList } from "./user/UserList";
+import { UserCreate } from "./user/UserCreate";
+import { UserEdit } from "./user/UserEdit";
+import { UserShow } from "./user/UserShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -40,18 +36,11 @@ const App = (): React.ReactElement => {
         loginPage={Login}
       >
         <Resource
-          name="DreamRequest"
-          list={DreamRequestList}
-          edit={DreamRequestEdit}
-          create={DreamRequestCreate}
-          show={DreamRequestShow}
-        />
-        <Resource
-          name="DreamInterpretation"
-          list={DreamInterpretationList}
-          edit={DreamInterpretationEdit}
-          create={DreamInterpretationCreate}
-          show={DreamInterpretationShow}
+          name="User"
+          list={UserList}
+          edit={UserEdit}
+          create={UserCreate}
+          show={UserShow}
         />
       </Admin>
     </div>
