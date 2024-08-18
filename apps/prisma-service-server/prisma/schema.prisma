@@ -1,0 +1,56 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Like {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  tag       Tag?     @relation(fields: [tagId], references: [id])
+  tagId     String?
+  updatedAt DateTime @updatedAt
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+}
+
+model Tag {
+  createdAt DateTime @default(now())
+  dream     Dream?   @relation(fields: [dreamId], references: [id])
+  dreamId   String?
+  id        String   @id @default(cuid())
+  likes     Like[]
+  name      String?
+  parent    String?
+  updatedAt DateTime @updatedAt
+}
+
+model User {
+  createdAt DateTime @default(now())
+  dreams    Dream[]
+  email     String?  @unique
+  firstName String?
+  id        String   @id @default(cuid())
+  lastName  String?
+  likes     Like[]
+  password  String
+  roles     Json
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Dream {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  image     Json?
+  link      String?
+  query     String?
+  response  String?
+  tags      Tag[]
+  updatedAt DateTime @updatedAt
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+}
